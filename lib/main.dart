@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fam_track/the_observer.dart';
 
 void main() {
   runApp(const MyApp());
+  Bloc.observer = TheObserver();
 }
 
 class MyApp extends StatelessWidget {
